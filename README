@@ -1,0 +1,26 @@
+== ecsstender.font-face.js
+
+Adds support for a simplified @font-face declaration.
+
+== Requirements
+
+If you plan to offer SVG font support, add a svg_id to the eCSStender methods.
+This svg_id will be automatically appended to ALL svg URLs.
+
+For example:
+
+  eCSStender.addMethod('svg_id','mysvgid');
+
+== What's new in this release?
+
+See the CHANGELOG file for information on what's new.
+
+== The distribution
+
+Besides the ecsstender.font-face.js file in /src, there's a
+test tree (/test) included which holds assorted tests.
+
+== License
+
+ecsstender.font-face.js is licensed under the terms of the MIT License,
+see the included MIT-LICENSE file.
