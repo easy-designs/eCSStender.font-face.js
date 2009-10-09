@@ -10,6 +10,32 @@ This svg_id will be automatically appended to ALL svg URLs.
 For example:
 
   eCSStender.addMethod('svg_id','mysvgid');
+  
+== Use
+
+This extension supports the transformation of a format-agmostic font declaration
+
+@font-face {
+  font-family: 'Comfortaa';
+  font-weight: normal;
+  src: url('fonts/Comfortaa_Regular');
+}
+
+into one that follows Paul Irish's Bulletproof @font-face syntax [1] and that's
+based on what files have been uploaded to the specified location with the same 
+base filename:
+
+@font-face {
+  font-family: 'Comfortaa';
+  font-weight: normal;
+  src: url('fonts/Comfortaa_Regular.eot');
+  src: local('Comfortaa'),
+       url('fonts/Comfortaa_Regular.ttf') format('truetype'),
+       url('fonts/Comfortaa_Regular.otf') format('opentype'),
+       url('fonts/Comfortaa_Regular.svg#mysvgid') format('svg');
+}
+
+[1] http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/
 
 == What's new in this release?
 
