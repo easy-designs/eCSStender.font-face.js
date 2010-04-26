@@ -1,3 +1,7 @@
+*v0.2* (2010-04-05)
+
+* updated the extension to not block on large font files. Should keep the UI responsive.
+
 *v0.1* (2009-10-09)
 
 * Initial checkin of progress (needs some testing)
