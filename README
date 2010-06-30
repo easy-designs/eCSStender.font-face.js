@@ -46,6 +46,16 @@ See the CHANGELOG file for information on what's new.
 Besides the ecsstender.font-face.js file in /src, there's a
 test tree (/test) included which holds assorted tests.
 
+== Submodules
+
+The following submodules are included in the /test folder and will need updating:
+
+* eCSStender
+
+To update, run this in the root folder of the project: 
+
+$> git submodule init && git submodule update
+
 == License
 
 ecsstender.font-face.js is licensed under the terms of the MIT License,
